@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Banner from '../components/Sections/Banner.astro';
+import RigthRoundImageSection from '../components/Sections/RigthRoundImageSection.astro';
+import LeftRoundImageSection from '../components/Sections/LeftRoundImageSection.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<Banner />
+	<RigthRoundImageSection 
+		title='Nosotros Somos'
+		titleColor='#2E6379'
+		body='Una fundación de familias para familias que se enfoca en el Trastorno del Espectro Autista TEA, con un objetivo claro: \n\n Formar seres humanos íntegros y autónomos capaces de crear su propio camino en la sociedad. '
+		img='https://th.bing.com/th/id/R.5ad2cbdc121eea120781e11135413b5d?rik=NKjC%2bm7xg9ueHQ&pid=ImgRaw&r=0',
+		color='#BBE1F3'/>
+	<LeftRoundImageSection
+		title='Somos educación'
+		titleColor="#83373E"
+		body='Educar es el primer paso para apoyar a una familia y a una persona con TEA. Tu compromiso y una atención temprana son fundamentales durante el inicio y desarrollo integral.\n\nLes crearemos nuevas oportunidades con espacios para socializar, aprender y crecer a través de programas e iniciativas; para que cada vez existan más artistas, youtubers, músicos, deportistas, médicos, etc. capaces y con sueños 100% realizables.'
+		img='https://th.bing.com/th/id/R.5ad2cbdc121eea120781e11135413b5d?rik=NKjC%2bm7xg9ueHQ&pid=ImgRaw&r=0',
+		color='#F9A7AF'/>
+	<RigthRoundImageSection 
+		title='Somos soporte'
+		titleColor='#886933'
+		body='Proveemos herramientas prácticas y sencillas, que permiten el acceso a información útil para entender sus habilidades, comportamientos, necesidades y contribuir a su proceso de evolución.\n\nSi ya tienes conocimiento del diagnóstico, es momento de actuar.\n\nSi no, cuéntanos sus particularidades y nosotros te guiaremos hacia el camino más idóneo.'
+		img='https://th.bing.com/th/id/R.5ad2cbdc121eea120781e11135413b5d?rik=NKjC%2bm7xg9ueHQ&pid=ImgRaw&r=0',
+		color='#FEE7BC'/>
+	<LeftRoundImageSection
+		title='Somos conexión'
+		titleColor='#2F7D58'
+		body='Cada familia tiene características particulares y para actuar es necesario entender el panorama, conocerlas, analizar sus necesidades y oportunidades.\n\nLos padres deben ser el apoyo que los niños necesitan, los profesionales la guía y nosotros como fundación, el soporte que los inspira a seguir adelante.\n\nTu experiencia es importante para nosotros, queremos transformarla en información de valor que pueda ser consultada en línea y compartida con los actores de la fundación.'
+		img='https://th.bing.com/th/id/R.5ad2cbdc121eea120781e11135413b5d?rik=NKjC%2bm7xg9ueHQ&pid=ImgRaw&r=0',
+		color='#C8EFDD'/>
+</Layout>

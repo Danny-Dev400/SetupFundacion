@@ -1,0 +1,79 @@
+---
+interface Props {
+  title: string;
+  titleColor: string;
+  body: string;
+  img: string;
+  color: string;
+}
+
+const { img, title, titleColor, body, color } = Astro.props;
+---
+
+<section class="my-32 relative">
+  <div
+    class="absolute h-full left-1/2 w-1/2 -z-10"
+    style={`background-color: ${color};`}
+  >Hola
+  </div>
+  <div
+    class="w-fit mx-auto rounded-l-full flex"
+    style={`background-color: ${color};`}
+  >
+    <div class="flex max-w-screen-xl py-12">
+      <div class="w-1/2 min-h-500 flex justify-center items-center">
+        <div
+          class="bg-white rounded-full h-600p w-600p flex justify-center items-center"
+        >
+          <img
+            src=`${img}`
+            alt=""
+            class="object-contain rounded-full h-580p w-580p"
+          />
+        </div>
+      </div>
+      <div class="w-1/2 min-h-500 grid place-items-center">
+        <div class="px-24">
+          <h2 class="text-5xl" style={`color: ${titleColor}`}><strong>{title}</strong></h2>
+          <p class="text-xl mt-10" style="white-space: pre-line;">
+            {body}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .h-600p {
+    height: 600px;
+  }
+
+  .w-600p {
+    width: 600px;
+  }
+
+  .h-580p {
+    height: 580px;
+  }
+
+  .w-580p {
+    width: 580px;
+  }
+
+  .min-w-screen-xl {
+    min-width: 90%;
+  }
+
+  .min-h-500 {
+    min-height: 500px;
+  }
+
+  .min-h-400 {
+    min-height: 400px;
+  }
+
+  .min-h-750 {
+    min-height: 750px;
+  }
+</style>
